@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/jlink
+END
+package-frame.html
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/jlink/package-frame.html
+END
+package-summary.html
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/jlink/package-summary.html
+END
+jlink.html
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/jlink/jlink.html
+END
+package-tree.html
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/jlink/package-tree.html
+END
+ClassNameReader.html
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/jlink/ClassNameReader.html
+END
+JlinkTask.html
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/jlink/JlinkTask.html
+END

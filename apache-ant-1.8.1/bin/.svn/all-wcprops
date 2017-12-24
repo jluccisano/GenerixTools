@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/bin
+END
+antRun.pl
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/bin/antRun.pl
+END
+runant.pl
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/bin/runant.pl
+END
+ant
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/bin/ant
+END
+complete-ant-cmd.pl
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/bin/complete-ant-cmd.pl
+END
+lcp.bat
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/bin/lcp.bat
+END
+ant.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/bin/ant.cmd
+END
+envset.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/bin/envset.cmd
+END
+ant.bat
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/bin/ant.bat
+END
+antRun
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/bin/antRun
+END
+runrc.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/bin/runrc.cmd
+END
+antRun.bat
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/bin/antRun.bat
+END
+antenv.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/bin/antenv.cmd
+END
+runant.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/bin/runant.py
+END

@@ -1,0 +1,239 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/junit
+END
+JUnitTask.html
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/junit/JUnitTask.html
+END
+Constants.html
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/junit/Constants.html
+END
+JUnitTaskMirror.JUnitResultFormatterMirror.html
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/junit/JUnitTaskMirror.JUnitResultFormatterMirror.html
+END
+FormatterElement.html
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/junit/FormatterElement.html
+END
+DOMUtil.NodeListImpl.html
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/junit/DOMUtil.NodeListImpl.html
+END
+JUnitTask.JUnitLogStreamHandler.html
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/junit/JUnitTask.JUnitLogStreamHandler.html
+END
+FormatterElement.TypeAttribute.html
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/junit/FormatterElement.TypeAttribute.html
+END
+JUnitTestRunner.html
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/junit/JUnitTestRunner.html
+END
+JUnitTask.TestResultHolder.html
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/junit/JUnitTask.TestResultHolder.html
+END
+package-tree.html
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/junit/package-tree.html
+END
+JUnitTaskMirrorImpl.html
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/junit/JUnitTaskMirrorImpl.html
+END
+SummaryJUnitResultFormatter.html
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/junit/SummaryJUnitResultFormatter.html
+END
+FailureRecorder.TestInfos.html
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/junit/FailureRecorder.TestInfos.html
+END
+OutErrSummaryJUnitResultFormatter.html
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/junit/OutErrSummaryJUnitResultFormatter.html
+END
+XMLConstants.html
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/junit/XMLConstants.html
+END
+XMLJUnitResultFormatter.html
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/junit/XMLJUnitResultFormatter.html
+END
+JUnitTask.JUnitLogOutputStream.html
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/junit/JUnitTask.JUnitLogOutputStream.html
+END
+JUnitTaskMirror.html
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/junit/JUnitTaskMirror.html
+END
+DOMUtil.NodeFilter.html
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/junit/DOMUtil.NodeFilter.html
+END
+AggregateTransformer.html
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/junit/AggregateTransformer.html
+END
+Enumerations.html
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/junit/Enumerations.html
+END
+JUnitResultFormatter.html
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/junit/JUnitResultFormatter.html
+END
+DOMUtil.html
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/junit/DOMUtil.html
+END
+FailureRecorder.html
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/junit/FailureRecorder.html
+END
+BatchTest.html
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/junit/BatchTest.html
+END
+JUnitTask.ForkMode.html
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/junit/JUnitTask.ForkMode.html
+END
+package-frame.html
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/junit/package-frame.html
+END
+JUnitTaskMirror.JUnitTestRunnerMirror.html
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/junit/JUnitTaskMirror.JUnitTestRunnerMirror.html
+END
+BriefJUnitResultFormatter.html
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/junit/BriefJUnitResultFormatter.html
+END
+package-summary.html
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/junit/package-summary.html
+END
+JUnitTest.html
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/junit/JUnitTest.html
+END
+JUnitTaskMirror.SummaryJUnitResultFormatterMirror.html
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/junit/JUnitTaskMirror.SummaryJUnitResultFormatterMirror.html
+END
+JUnitTask.SummaryAttribute.html
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/junit/JUnitTask.SummaryAttribute.html
+END
+JUnitVersionHelper.html
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/junit/JUnitVersionHelper.html
+END
+PlainJUnitResultFormatter.html
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/junit/PlainJUnitResultFormatter.html
+END
+AggregateTransformer.Format.html
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/junit/AggregateTransformer.Format.html
+END
+XMLResultAggregator.html
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/junit/XMLResultAggregator.html
+END
+TearDownOnVmCrash.html
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/junit/TearDownOnVmCrash.html
+END
+BaseTest.html
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/junit/BaseTest.html
+END

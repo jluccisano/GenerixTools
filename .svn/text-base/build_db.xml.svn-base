@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="create-db-test" >
+
+    <path id="sql.classpath">
+		<path refid="ivy.sql.classpath"/>
+	</path>
+	
+	<target name="create-schema" depends="init-sql-cachepath,drop-db,create-db" description="--> Create database">
+		 <sql 
+		  	   url="${url}/${jdbc.databaseName}"
+		  	   userid="${userid}"
+		  	   password="${password}"
+		  	   src="${src}"
+		  	   driver="${driver}"
+			   classpathref="sql.classpath">
+		 </sql>
+	</target>
+	
+	<target name="create-db"> 		
+		<sql 
+			   url="${url}/mysql"
+		  	   userid="${userid}"
+		  	   password="${password}"
+		  	   driver="${driver}"
+			   classpathref="sql.classpath">
+			CREATE DATABASE IF NOT EXISTS ${jdbc.databaseName}; 
+			grant all privileges on ${jdbc.databaseName} to 'root'@'localhost'; 
+		</sql> 
+	</target> 
+	
+	<target name="drop-db">
+      <input message="Do you really want to delete this  database (y/n)?" validargs="y,n" addproperty="do.delete" /> 
+      <condition property="do.abort"> 
+            <equals arg1="n" arg2="${do.delete}"/> 
+      </condition> 
+      <fail if="do.abort">Build aborted by user.</fail> 
+      <sql driver="${driver}" url="${url}/mysql" userid="${userid}" password="${password}" classpathref="sql.classpath">
+           DROP DATABASE IF EXISTS ${jdbc.databaseName};
+      </sql>
+   </target>
+
+</project> 

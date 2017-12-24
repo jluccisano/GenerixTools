@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/rmic
+END
+XNewRmic.html
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/rmic/XNewRmic.html
+END
+WLRmic.html
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/rmic/WLRmic.html
+END
+DefaultRmicAdapter.html
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/rmic/DefaultRmicAdapter.html
+END
+ForkingSunRmic.html
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/rmic/ForkingSunRmic.html
+END
+SunRmic.html
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/rmic/SunRmic.html
+END
+RmicAdapterFactory.html
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/rmic/RmicAdapterFactory.html
+END
+package-frame.html
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/rmic/package-frame.html
+END
+package-summary.html
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/rmic/package-summary.html
+END
+KaffeRmic.html
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/rmic/KaffeRmic.html
+END
+package-tree.html
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/rmic/package-tree.html
+END
+RmicAdapter.html
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/rmic/RmicAdapter.html
+END

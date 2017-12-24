@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="build_ivy" default="init-ivy" xmlns:ivy="antlib:org.apache.ivy.ant">
+
+	<property environment="env"/>
+	
+    <!-- ================================= 
+          target: init-ivy            
+      ================================= -->
+    <target name="init_ivy">
+       	<ivy:settings file="${env.GENTOOLS_HOME}/ivysettings.xml"/>	
+	</target>
+	
+	<target name="init_compile_classpath" depends="init_ivy">
+       	<ivy:cachepath pathid="ivy.compile.classpath" conf="compile,runtime" type="jar,bundle"/>
+	</target>
+	
+	<target name="init_test_classpath" depends="init_ivy">
+       	<ivy:cachepath pathid="ivy.test.classpath" conf="test" type="jar,bundle"/>
+	</target>
+	
+	<target name="init_jetty_classpath" depends="init_ivy">
+       	<ivy:cachepath pathid="ivy.jetty.classpath" conf="jetty" type="jar,bundle"/>
+	</target>
+	
+	
+	
+<!--##########################################################################################################################################-->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ 	<!-- ================================= 
+          target: init-ivy            
+      ================================= -->
+    <target name="init-ivy2">
+       	<ivy:settings file="${env.GENTOOLS_HOME}/ivysettings.xml"/>	
+    	<!--<ivy:cachepath pathid="ivy.compile.jar.classpath" conf="compile,runtime,default" type="jar,bundle" />
+    	<ivy:cachefileset setId="ivy.fileset.jar.dir" type="jar,bundle,war"  />
+    	<ivy:cachepath pathid="ivy.compile.swc.classpath" type="swc,swf" />
+    	<ivy:cachefileset setId="ivy.fileset.swc.dir" type="swc,swf" />-->
+		
+    </target>
+	
+	<target name="init-sql-cachepath">
+		<ivy:settings file="${env.GENTOOLS_HOME}/ivysettings.xml"/>	
+		<ivy:cachepath pathid="ivy.sql.classpath" conf="sql" />
+	</target>
+    	
+ 	<!-- ================================= 
+          target: resolve              
+      ================================= -->
+    <target name="resolve" depends="init_ivy" description="--> retrieve dependencies with ivy">
+        <ivy:retrieve pattern="${ivy.retrieve.path}/[artifact].[ext]" sync="true" type="jar,bundle,war" overwriteMode="always" />
+		<ivy:retrieve pattern="${ivy.retrieve.flex.path}/[artifact].[ext]" sync="true"  type="swc,swf" overwriteMode="always" />
+    </target> 
+	
+    
+ 	<!-- ================================= 
+          target: clean-cache              
+      ================================= -->
+	<target name="clean-cache" description="--> clean the ivy cache">
+		<ivy:cleancache />
+	</target>
+	
+    <!-- ================================= 
+          target: publish an artifact         
+    ================================= -->
+	<target name="publish" depends="init_ivy"  description="--> publish an artifact">
+		<ivy:resolve/>
+		<ivy:publish artifactspattern="${ivy.artifactspattern}"
+					 organisation="${ivy.organisation}"
+					 module="${ivy.module}"
+					 revision="${ivy.revision}"
+			 		 pubrevision="${ivy.revision}"
+					 status="${ivy.status}"
+					 resolver="${ivy.resolver}"
+					 forcedeliver="true"
+					 overwrite="true"
+					 haltonmissing="true"/>
+	</target>
+	
+</project>

@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Licensed to the Apache Software Foundation (ASF) under one
+   or more contributor license agreements.  See the NOTICE file
+   distributed with this work for additional information
+   regarding copyright ownership.  The ASF licenses this file
+   to you under the Apache License, Version 2.0 (the
+   "License"); you may not use this file except in compliance
+   with the License.  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing,
+   software distributed under the License is distributed on an
+   "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+   KIND, either express or implied.  See the License for the
+   specific language governing permissions and limitations
+   under the License.    
+-->
+<!-- ====================================================================== 
+     This is a sample project to build our own ivy repository.
+     ====================================================================== -->
+<project name="ivy-repository" default="install-deps" xmlns:ivy="antlib:org.apache.ivy.ant">
+
+	<!-- Load the properties file. -->
+	<property file="ivy.properties" />
+	
+	<property name="from.resolver" value="public.resolvers"/>
+	<property name="to.resolver" value="ivysvn"/>
+	
+	<property name="ivy.cache.dir" value="${basedir}/cache" />
+    <property name="dest.repo.dir" value="${basedir}/repo" />
+
+	<!-- - - - - - - - - - - - - - - - - - 
+          target: init-ivy                      
+         - - - - - - - - - - - - - - - - - -->
+    <target name="init-ivy">
+       	<ivy:settings id="basic.settings" file="ivysettings.xml">
+ 			 <credentials host="${svn.root.url}"  username="${svn.user}" passwd="${svn.password}" />
+		</ivy:settings> 
+    </target>
+	
+	<target name="install-spring" description="--> flex compile">
+
+	   <antcall target="install-spring-deps"> 
+		<param name="organisation" value="xalan"/> 
+		<param name="module" value="serializer"/> 
+		<param name="revision" value="2.7.1"/> 
+	   </antcall> 
+	   
+	   <antcall target="install-spring-deps"> 
+		<param name="organisation" value="wsdl4j"/> 
+		<param name="module" value="wsdl4j"/> 
+		<param name="revision" value="1.6.2"/> 
+	   </antcall> 
+	   
+	   <antcall target="install-spring-deps"> 
+		<param name="organisation" value="xml-apis"/> 
+		<param name="module" value="xml-apis"/> 
+		<param name="revision" value="2.0.2"/> 
+	   </antcall> 
+	   
+ 	<!--   <antcall target="install-spring-deps"> 
+		<param name="organisation" value="org.springframework.ws"/> 
+		<param name="module" value="org.springframework.xml"/> 
+		<param name="revision" value="1.5.9.A"/> 
+	   </antcall> 
+	   
+	   <antcall target="install-spring-deps"> 
+		<param name="organisation" value="org.springframework"/> 
+		<param name="module" value="org.springframework.oxm"/> 
+		<param name="revision" value="3.0.3.RELEASE"/> 
+	   </antcall> 
+	   
+	   <antcall target="install-spring-deps"> 
+		<param name="organisation" value="org.springframework"/> 
+		<param name="module" value="org.springframework.jdbc"/> 
+		<param name="revision" value="3.0.3.RELEASE"/> 
+	   </antcall> 
+	   
+	   <antcall target="install-spring-deps"> 
+		<param name="organisation" value="org.springframework"/> 
+		<param name="module" value="org.springframework.asm"/> 
+		<param name="revision" value="3.0.3.RELEASE"/> 
+	   </antcall> 
+	   
+	   <antcall target="install-spring-deps"> 
+		<param name="organisation" value="org.springframework"/> 
+		<param name="module" value="org.springframework.expression"/> 
+		<param name="revision" value="3.0.3.RELEASE"/> 
+	   </antcall>
+	   
+	   <antcall target="install-spring-deps"> 
+		<param name="organisation" value="org.springframework"/> 
+		<param name="module" value="org.springframework.expression"/> 
+		<param name="revision" value="3.0.3.RELEASE"/> 
+	   </antcall> 
+	   
+	   <antcall target="install-spring-deps"> 
+		<param name="organisation" value="org.springframework"/> 
+		<param name="module" value="org.springframework.instrument.tomcat"/> 
+		<param name="revision" value="3.0.3.RELEASE"/> 
+	   </antcall> 
+	   
+	   <antcall target="install-spring-deps"> 
+		<param name="organisation" value="org.springframework"/> 
+		<param name="module" value="org.springframework.instrument"/> 
+		<param name="revision" value="3.0.3.RELEASE"/> 
+	   </antcall> 
+	   
+	   <antcall target="install-spring-deps"> 
+		<param name="organisation" value="org.springframework"/> 
+		<param name="module" value="org.springframework.jms"/> 
+		<param name="revision" value="3.0.3.RELEASE"/> 
+	   </antcall> 
+	   
+	   <antcall target="install-spring-deps"> 
+		<param name="organisation" value="org.springframework"/> 
+		<param name="module" value="org.springframework.web.portlet"/> 
+		<param name="revision" value="3.0.3.RELEASE"/> 
+	   </antcall> 
+	   
+	   <antcall target="install-spring-deps"> 
+		<param name="organisation" value="org.springframework"/> 
+		<param name="module" value="org.springframework.web.servlet"/> 
+		<param name="revision" value="3.0.3.RELEASE"/> 
+	   </antcall>
+	   
+	   <antcall target="install-spring-deps"> 
+		<param name="organisation" value="org.springframework"/> 
+		<param name="module" value="org.springframework.web.struts"/> 
+		<param name="revision" value="3.0.3.RELEASE"/> 
+	   </antcall>
+	   
+	   <antcall target="install-spring-deps"> 
+		<param name="organisation" value="org.springframework.security"/> 
+		<param name="module" value="org.springframework.security.annotation"/> 
+		<param name="revision" value="2.0.5.RELEASE"/> 
+	   </antcall>
+	   
+	   <antcall target="install-spring-deps"> 
+		<param name="organisation" value="org.springframework.security"/> 
+		<param name="module" value="org.springframework.security.web"/> 
+		<param name="revision" value="3.0.2.RELEASE"/> 
+	   </antcall>
+	   
+	   <antcall target="install-spring-deps"> 
+		<param name="organisation" value="org.springframework.ws"/> 
+		<param name="module" value="org.springframework.ws"/> 
+		<param name="revision" value="1.5.9.A"/> 
+	   </antcall>
+	   
+	   <antcall target="install-spring-deps"> 
+		<param name="organisation" value="org.springframework.security"/> 
+		<param name="module" value="org.springframework.security.config"/> 
+		<param name="revision" value="3.0.2.RELEASE"/> 
+	   </antcall>
+	   
+	   <antcall target="install-spring-deps"> 
+		<param name="organisation" value="org.springframework.security"/> 
+		<param name="module" value="org.springframework.security.core"/> 
+		<param name="revision" value="3.0.2.RELEASE"/> 
+	   </antcall>
+	   
+	   <antcall target="install-spring-deps"> 
+		<param name="organisation" value="org.springframework.flex"/> 
+		<param name="module" value="org.springframework.flex"/>
+		<param name="revision" value="1.0.3.RELEASE"/> 
+	   </antcall>
+	   
+	   <antcall target="install-spring-deps"> 
+		<param name="organisation" value="org.springframework"/> 
+		<param name="module" value="org.springframework.aop"/>
+		<param name="revision" value="3.0.3.RELEASE"/> 
+	   </antcall>
+	   
+	   <antcall target="install-spring-deps"> 
+		<param name="organisation" value="org.springframework"/> 
+		<param name="module" value="org.springframework.beans"/>
+		<param name="revision" value="3.0.3.RELEASE"/> 
+	   </antcall>
+	   
+	   <antcall target="install-spring-deps"> 
+		<param name="organisation" value="org.springframework"/> 
+		<param name="module" value="org.springframework.context.support"/>
+		<param name="revision" value="3.0.3.RELEASE"/> 
+	   </antcall>
+	   
+	   <antcall target="install-spring-deps"> 
+		<param name="organisation" value="org.springframework"/> 
+		<param name="module" value="org.springframework.core"/>
+		<param name="revision" value="3.0.3.RELEASE"/> 
+	   </antcall>
+	   
+	   <antcall target="install-spring-deps"> 
+		<param name="organisation" value="org.springframework"/> 
+		<param name="module" value="org.springframework.orm"/>
+		<param name="revision" value="3.0.3.RELEASE"/> 
+	   </antcall>
+	   
+	   <antcall target="install-spring-deps"> 
+		<param name="organisation" value="org.springframework"/> 
+		<param name="module" value="org.springframework.test"/>
+		<param name="revision" value="3.0.3.RELEASE"/> 
+	   </antcall>
+	   
+	   <antcall target="install-spring-deps"> 
+		<param name="organisation" value="org.springframework"/> 
+		<param name="module" value="org.springframework.aspects"/>
+		<param name="revision" value="3.0.3.RELEASE"/> 
+	   </antcall>
+	   
+	   
+	   <antcall target="install-spring-deps"> 
+		<param name="organisation" value="org.springframework"/> 
+		<param name="module" value="org.springframework.transaction"/>
+		<param name="revision" value="3.0.3.RELEASE"/> 
+	   </antcall>
+	   
+	   <antcall target="install-spring-deps"> 
+		<param name="organisation" value="org.springframework"/> 
+		<param name="module" value="org.springframework.web"/>
+		<param name="revision" value="3.0.3.RELEASE"/> 
+	   </antcall>
+	   
+	   <antcall target="install-spring-deps"> 
+		<param name="organisation" value="edu.oswego.cs.concurrent"/> 
+		<param name="module" value="com.springsource.edu.oswego.cs.dl.util.concurrent"/>
+		<param name="revision" value="1.3.4"/> 
+	   </antcall> -->
+
+	</target>
+	
+	
+	<target name="install-spring-deps" depends="init-ivy" description="--> install spring modules from public repositories">
+	
+		<ivy:install settingsRef="basic.settings" organisation="${organisation}" module="${module}" revision="${revision}" 
+    	    	     from="${from.resolver}" to="${to.resolver}" overwrite="false" transitive="false"/>
+	</target>
+
+    <!-- ================================= 
+          target: install-deps
+         ================================= -->
+    <target name="install-blazeds" description="--> flex compile">
+
+	   <antcall target="install-blazeds-deps"> 
+		<param name="organisation" value="com.adobe.blazeds"/> 
+		<param name="module" value="blazeds-opt"/> 
+		<param name="revision" value="3.2.0.3978"/> 
+	   </antcall>
+	   
+	   <antcall target="install-blazeds-deps"> 
+		<param name="organisation" value="com.adobe.blazeds"/> 
+		<param name="module" value="blazeds-proxy"/> 
+		<param name="revision" value="3.2.0.3978"/> 
+	   </antcall>
+	   
+	   
+	   <antcall target="install-blazeds-deps"> 
+		<param name="organisation" value="com.adobe.blazeds"/> 
+		<param name="module" value="blazeds-common"/> 
+		<param name="revision" value="3.2.0.3978"/> 
+	   </antcall>
+	   
+	   <antcall target="install-blazeds-deps"> 
+		<param name="organisation" value="com.adobe.blazeds"/> 
+		<param name="module" value="blazeds-core"/> 
+		<param name="revision" value="3.2.0.3978"/> 
+	   </antcall>
+	   
+	    <antcall target="install-blazeds-deps"> 
+		<param name="organisation" value="com.adobe.blazeds"/> 
+		<param name="module" value="blazeds-remoting"/> 
+		<param name="revision" value="3.2.0.3978"/> 
+	   </antcall>
+	   
+	</target>
+	
+    <target name="install-blazeds-deps" depends="init-ivy" description="--> install blazeds modules from public repositories">
+			<ivy:install settingsRef="basic.settings" organisation="${organisation}" module="${module}" revision="${revision}" 
+    	    	         from="${from.resolver}" to="${to.resolver}" overwrite="false" transitive="false"/>
+	</target>
+							 
+		
+
+    <target name="install-javax" description="--> flex compile">
+
+	   <antcall target="install-javax-deps"> 
+		<param name="organisation" value="javax.transaction"/> 
+		<param name="module" value="jta"/> 
+		<param name="revision" value="1.1"/> 
+	   </antcall>
+	   
+	   <antcall target="install-javax-deps"> 
+		<param name="organisation" value="javax"/> 
+		<param name="module" value="javaee-api"/> 
+		<param name="revision" value="6.0"/> 
+	   </antcall>
+	   
+	   <antcall target="install-javax-deps"> 
+		<param name="organisation" value="javax.mail"/> 
+		<param name="module" value="mail"/> 
+		<param name="revision" value="1.4.1"/> 
+	   </antcall>
+
+	</target>
+	
+	<target name="install-javax-deps" depends="init-ivy" description="--> install javax modules from public repositories">
+			<ivy:install settingsRef="basic.settings" organisation="${organisation}" module="${module}" revision="${revision}" 
+    	    	         from="${from.resolver}" to="${to.resolver}" overwrite="false" transitive="false"/>
+	</target>
+	
+	<target name="install-hibernate" description="--> flex compile">
+
+	   <antcall target="install-hibernate-deps"> 
+		<param name="organisation" value="org.hibernate"/> 
+		<param name="module" value="hibernate-core"/> 
+		<param name="revision" value="3.5.1-Final"/> 
+	   </antcall>
+	   
+	   <antcall target="install-hibernate-deps"> 
+		<param name="organisation" value="org.hibernate"/> 
+		<param name="module" value="hibernate-annotations"/> 
+		<param name="revision" value="3.5.1-Final"/> 
+	   </antcall>
+
+	   <antcall target="install-hibernate-deps"> 
+		<param name="organisation" value="org.hibernate"/> 
+		<param name="module" value="hibernate-commons-annotations"/> 
+		<param name="revision" value="3.3.0.ga"/> 
+	   </antcall>
+
+	   <antcall target="install-hibernate-deps"> 
+		<param name="organisation" value="org.hibernate"/> 
+		<param name="module" value="ejb3-persistence"/> 
+		<param name="revision" value="1.0.2.GA"/> 
+	   </antcall>
+
+	</target>
+	
+    <target name="install-hibernate-deps" depends="init-ivy" description="--> install hibernate modules from public repositories">
+			<ivy:install settingsRef="basic.settings" organisation="${organisation}" module="${module}" revision="${revision}" 
+    	    	         from="${from.resolver}" to="${to.resolver}" overwrite="false" transitive="false"/>
+	</target>
+	
+	<target name="install-commons" description="--> flex compile">
+
+	   <antcall target="install-commons-deps"> 
+		<param name="organisation" value="commons-beanutils"/> 
+		<param name="module" value="commons-beanutils"/> 
+		<param name="revision" value="1.8.3"/> 
+	   </antcall>
+	   
+	   <antcall target="install-commons-deps"> 
+		<param name="organisation" value="commons-codec"/> 
+		<param name="module" value="commons-codec"/> 
+		<param name="revision" value="1.4"/> 
+	   </antcall>
+	   
+	   <antcall target="install-commons-deps"> 
+		<param name="organisation" value="commons-collections"/> 
+		<param name="module" value="commons-collections"/> 
+		<param name="revision" value="3.2.1"/> 
+	   </antcall>
+	   
+	   <antcall target="install-commons-deps"> 
+		<param name="organisation" value="commons-dbcp"/> 
+		<param name="module" value="commons-dbcp"/> 
+		<param name="revision" value="1.4"/> 
+	   </antcall>
+	   
+	   <antcall target="install-commons-deps"> 
+		<param name="organisation" value="commons-digester"/> 
+		<param name="module" value="commons-digester"/> 
+		<param name="revision" value="2.0"/> 
+	   </antcall>
+	   
+	   <antcall target="install-commons-deps"> 
+		<param name="organisation" value="commons-fileupload"/> 
+		<param name="module" value="commons-fileupload"/> 
+		<param name="revision" value="1.2.1"/> 
+	   </antcall>
+	   
+	   <antcall target="install-commons-deps"> 
+		<param name="organisation" value="commons-httpclient"/> 
+		<param name="module" value="commons-httpclient"/> 
+		<param name="revision" value="3.1"/> 
+	   </antcall>
+	   
+	   <antcall target="install-commons-deps"> 
+		<param name="organisation" value="commons-logging"/> 
+		<param name="module" value="commons-logging"/> 
+		<param name="revision" value="1.1.1"/> 
+	   </antcall>
+	   
+	   <antcall target="install-commons-deps"> 
+		<param name="organisation" value="commons-pool"/> 
+		<param name="module" value="commons-pool"/> 
+		<param name="revision" value="1.5.4"/> 
+	   </antcall>
+	   
+	   <antcall target="install-commons-deps"> 
+		<param name="organisation" value="commons-io"/> 
+		<param name="module" value="commons-io"/> 
+		<param name="revision" value="1.4"/> 
+	   </antcall>
+	   
+	   <antcall target="install-commons-deps"> 
+		<param name="organisation" value="commons-lang"/> 
+		<param name="module" value="commons-lang"/> 
+		<param name="revision" value="2.5"/> 
+	   </antcall>
+	   
+	   <antcall target="install-commons-deps"> 
+		<param name="organisation" value="xalan"/> 
+		<param name="module" value="xalan"/> 
+		<param name="revision" value="2.7.1"/> 
+	   </antcall>
+	   
+	</target>
+	
+	<target name="install-commons-deps" depends="init-ivy" description="--> install commons modules from public repositories">
+			<ivy:install settingsRef="basic.settings" organisation="${organisation}" module="${module}" revision="${revision}" 
+    	    	         from="${from.resolver}" to="${to.resolver}" overwrite="false" transitive="false"/>
+	</target>
+	
+	<target name="install-junit" description="--> flex compile">
+
+	   <antcall target="install-junit-deps"> 
+		<param name="organisation" value="junit"/> 
+		<param name="module" value="junit"/> 
+		<param name="revision" value="4.8.1"/> 
+	   </antcall>
+	   
+	</target>
+	
+    <target name="install-junit-deps" depends="init-ivy" description="--> install junit modules from public repositories">
+			<ivy:install settingsRef="basic.settings" organisation="${organisation}" module="${module}" revision="${revision}" 
+    	    	         from="${from.resolver}" to="${to.resolver}" overwrite="false" transitive="false"/>
+	</target>
+
+    					 
+	<target name="install-mysql" description="--> flex compile">
+
+	   <antcall target="install-mysql-deps"> 
+		<param name="organisation" value="mysql"/> 
+		<param name="module" value="mysql-connector-java"/> 
+		<param name="revision" value="5.1.13"/> 
+	   </antcall>
+	   
+	   <antcall target="install-mysql-deps"> 
+		<param name="organisation" value="cglib"/> 
+		<param name="module" value="cglib"/> 
+		<param name="revision" value="2.2"/> 
+	   </antcall>
+	  
+	</target>
+	
+    <target name="install-mysql-deps" depends="init-ivy" description="--> install mysql modules from public repositories">
+			<ivy:install settingsRef="basic.settings" organisation="${organisation}" module="${module}" revision="${revision}" 
+    	    	         from="${from.resolver}" to="${to.resolver}" overwrite="false" transitive="false"/>
+	</target>
+	
+	<target name="install-divers" description="--> flex compile">
+
+	   <antcall target="install-divers-deps"> 
+		<param name="organisation" value="log4j"/> 
+		<param name="module" value="log4j"/> 
+		<param name="revision" value="1.2.16"/> 
+	   </antcall>
+	   
+	   <antcall target="install-divers-deps"> 
+		<param name="organisation" value="org.apache.velocity"/> 
+		<param name="module" value="velocity"/> 
+		<param name="revision" value="1.6.4"/> 
+	   </antcall>
+	   
+	   <antcall target="install-divers-deps"> 
+		<param name="organisation" value="org.slf4j"/> 
+		<param name="module" value="slf4j-api"/> 
+		<param name="revision" value="1.6.1"/> 
+	   </antcall>
+	   
+	   <antcall target="install-divers-deps"> 
+		<param name="organisation" value="org.slf4j"/> 
+		<param name="module" value="slf4j-log4j12"/> 
+		<param name="revision" value="1.6.1"/> 
+	   </antcall>
+	   
+	   <antcall target="install-divers-deps"> 
+		<param name="organisation" value="javassist"/> 
+		<param name="module" value="javassist"/> 
+		<param name="revision" value="3.0"/> 
+	   </antcall>
+	   
+	   <antcall target="install-divers-deps"> 
+		<param name="organisation" value="itext"/> 
+		<param name="module" value="itext"/> 
+		<param name="revision" value="1.3.1"/> 
+	   </antcall>
+	   
+	   <antcall target="install-divers-deps"> 
+		<param name="organisation" value="dom4j"/> 
+		<param name="module" value="dom4j"/> 
+		<param name="revision" value="1.6.1"/> 
+	   </antcall>
+	   
+	   <antcall target="install-divers-deps"> 
+		<param name="organisation" value="asm"/> 
+		<param name="module" value="asm-attrs"/> 
+		<param name="revision" value="2.2.3"/> 
+	   </antcall>
+	   
+	   <antcall target="install-divers-deps"> 
+		<param name="organisation" value="org.aspectj"/> 
+		<param name="module" value="aspectjweaver"/> 
+		<param name="revision" value="1.6.9"/> 
+	   </antcall>
+	   
+	   <antcall target="install-divers-deps"> 
+		<param name="organisation" value="backport-util-concurrent"/> 
+		<param name="module" value="backport-util-concurrent"/> 
+		<param name="revision" value="3.1"/> 
+	   </antcall>
+	   
+	   <antcall target="install-divers-deps"> 
+		<param name="organisation" value="antlr"/> 
+		<param name="module" value="antlr"/> 
+		<param name="revision" value="2.7.7"/> 
+	   </antcall>
+	   
+	   <antcall target="install-divers-deps"> 
+		<param name="organisation" value="asm"/> 
+		<param name="module" value="asm"/> 
+		<param name="revision" value="3.2"/> 
+	   </antcall>
+	   
+	   <antcall target="install-divers-deps"> 
+		<param name="organisation" value="org.aopalliance"/> 
+		<param name="module" value="com.springsource.org.aopalliance"/> 
+		<param name="revision" value="1.0.0"/> 
+	   </antcall>
+	   
+	 
+
+	 
+	</target>
+	
+	<target name="install-divers-deps" depends="init-ivy" description="--> install divers modules from public repositories">
+			<ivy:install settingsRef="basic.settings" organisation="${organisation}" module="${module}" revision="${revision}" 
+    	    	         from="${from.resolver}" to="${to.resolver}" overwrite="false" transitive="false"/>
+	</target>
+	
+	<target name="install-test" description="--> test deps">
+		 <antcall target="install-test-deps"> 
+			<param name="organisation" value="org.dbunit"/> 
+			<param name="module" value="dbunit"/> 
+			<param name="revision" value="2.4.7"/> 
+		 </antcall>
+		 
+		 <antcall target="install-test-deps"> 
+			<param name="organisation" value="org.easymock"/> 
+			<param name="module" value="easymock"/> 
+			<param name="revision" value="3.0"/> 
+		 </antcall>
+		 
+	</target>
+	
+    <target name="install-test-deps" depends="init-ivy" description="--> install divers modules from public repositories">
+			<ivy:install settingsRef="basic.settings" organisation="${organisation}" module="${module}" revision="${revision}" 
+    	    	         from="${from.resolver}" to="${to.resolver}" overwrite="false" transitive="false"/>
+	</target>
+	
+	<target name="install-jetty" description="--> test deps">
+	
+		<antcall target="install-jetty-deps"> 
+			<param name="organisation" value="org.mortbay.jetty"/> 
+			<param name="module" value="jetty"/> 
+			<param name="revision" value="6.1.25"/> 
+		 </antcall>
+		 
+		 <antcall target="install-jetty-deps"> 
+			<param name="organisation" value="org.mortbay.jetty"/> 
+			<param name="module" value="jetty-util"/> 
+			<param name="revision" value="6.1.25"/> 
+		 </antcall>
+		 
+		 <antcall target="install-jetty-deps"> 
+			<param name="organisation" value="org.mortbay.jetty"/> 
+			<param name="module" value="servlet-api"/> 
+			<param name="revision" value="3.0.20100224"/> 
+		 </antcall>
+		 
+	</target>
+	
+    <target name="install-jetty-deps" depends="init-ivy" description="--> install divers modules from public repositories">
+			<ivy:install settingsRef="basic.settings" organisation="${organisation}" module="${module}" revision="${revision}" 
+    	    	         from="${from.resolver}" to="${to.resolver}" overwrite="false" transitive="false"/>
+	</target>
+	
+
+	<!-- ================================= 
+          target: clean-cache
+         ================================= -->
+    <target name="clean-cache" depends="init-ivy" description="--> clean the cache">
+    	<ivy:cleancache settingsRef="basic.settings" />
+    	<delete dir="${ivy.cache.dir}" failonerror="true"  />
+    </target>
+
+	<!-- ================================= 
+          target: clean-repo
+         ================================= -->
+    <target name="clean-repo" description="--> clean the destination repository">
+    	<delete dir="${dest.repo.dir}" failonerror="true"  />
+    </target>
+</project>

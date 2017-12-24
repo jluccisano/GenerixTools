@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/sos
+END
+package-frame.html
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/sos/package-frame.html
+END
+SOS.html
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/sos/SOS.html
+END
+SOSGet.html
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/sos/SOSGet.html
+END
+SOSLabel.html
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/sos/SOSLabel.html
+END
+package-summary.html
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/sos/package-summary.html
+END
+SOSCmd.html
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/sos/SOSCmd.html
+END
+package-tree.html
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/sos/package-tree.html
+END
+SOSCheckin.html
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/sos/SOSCheckin.html
+END
+SOSCheckout.html
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/sos/SOSCheckout.html
+END

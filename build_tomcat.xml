@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="tomcat_management" >
+
+	<property file="build.properties"/>
+	
+	<property name="tomcat.home" value="${env.GENTOOLS_HOME}/tomcat"/>	
+		<!--<property name="tomcat.home" value="D:/WORK/blazeds-turnkey-4.0.0.14931/tomcat"/>	-->
+
+	
+	<property name="tomcat.username" value="admin"/>
+	<property name="tomcat.password" value="password"/>
+	<property name="context.path" value="/Gencore_portal"/>
+	<property name="war.file" value="${basedir}/${dist.dir}/Gencore_portal.war"/>
+	
+	<import file="${tomcat.home}/bin/catalina-tasks.xml"/>
+	
+		<path id="deployer.classpath">
+		<fileset dir="${tomcat.home}/lib">
+			<include name="*.jar"/>
+		</fileset>
+	</path>
+	
+	<taskdef file="tomcat-tasks.properties" classpathref="deployer.classpath"/>
+	
+
+	
+	<target name="deploy" description="--> Deploy Webapp">
+		<deploy url="${tomcat.manager.url}" username="${tomcat.username}"
+				password="${tomcat.password}" path="${context.path}"
+				war="${war.file}" update="true"/>
+	</target>
+	
+	<target name="undeploy" description="--> Undeploy Webapp">
+		<undeploy url="${tomcat.manager.url}" username="${tomcat.username}"
+				  password="${tomcat.password}" path="${context.path}"/>
+	</target>
+	
+	<target name="start" description="--> Start webapp">
+		<start url="${tomcat.manager.url}" username="${tomcat.username}"
+			   password="${tomcat.password}" path="${context.path}"/>
+	</target>
+	
+	<target name="stop" description="--> Stop webapp">
+		<stop url="${tomcat.manager.url}" username="${tomcat.username}"
+			  password="${tomcat.password}" path="${context.path}"/>
+	</target>
+	
+	<target name="list" description="--> List all web application on server">
+		<list url="${tomcat.manager.url}" username="${tomcat.username}"
+			  password="${tomcat.password}"/>
+	</target>
+	
+	<target name="resources" description="-->Tomcat resources">
+		<!-- A 'type' attribute can query specific resources  -->
+		<resources url="${tomcat.manager.url}" username="${tomcat.username}"
+			  	   password="${tomcat.password}"/>
+	</target>
+	
+	<target name="roles" description="--> Tomcat roles">
+		<roles url="${tomcat.manager.url}" username="${tomcat.username}"
+			   password="${tomcat.password}"/>
+	</target>
+	
+	<target name="serverinfo" description="--> Tomcat server info">
+		<serverinfo url="${tomcat.manager.url}" username="${tomcat.username}"
+			  	    password="${tomcat.password}"/>
+	</target>
+	
+	<target name="sessions" description="--> Web application sessions">
+		<serverinfo url="${tomcat.manager.url}" username="${tomcat.username}"
+			  	    password="${tomcat.password}" path="${context.path}"/>
+	</target>
+	
+	<!--  Sample JMX get call: Show the maximum active sessions settings for the webapp -->
+	<target name="jmxget" description="--> JMX Get Command">
+		<jmxget url="${tomcat.manager.url}" username="${tomcat.username}"
+			  	password="${tomcat.password}"
+			  	bean="Catalina:type=Manager,path=/hello,host=localhost"
+			  	attribute="maxActiveSessions"/>
+	</target>
+	
+	<!--  Sample JMX query: show all servlets loaded by the Tomcat container -->
+	<target name="jmxquery" description="--> JMX Query Command">
+		<jmxquery url="${tomcat.manager.url}" username="${tomcat.username}"
+			  	  password="${tomcat.password}"
+			  	  query="*:j2eeType=Servlet,*"/>
+	</target>
+	
+	<!-- Sample JMX get call: Set the maximum active sessions settings for 
+	     the web applicaton to 100 -->
+	<target name="jmxset" description="--> JMX Set Command">
+		<jmxset url="${tomcat.manager.url}" username="${tomcat.username}"
+			  	password="${tomcat.password}"
+			  	bean="Catalina:type=Manager,path=/hello,host=localhost"
+			  	attribute="maxActiveSessions"
+			  	value="100"/>
+	</target>
+
+
+</project>

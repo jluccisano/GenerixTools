@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/GenerixTools/!svn/ver/39/apache-ant-1.8.1
+END
+WHATSNEW
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/WHATSNEW
+END
+NOTICE
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/NOTICE
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/LICENSE
+END
+INSTALL
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/INSTALL
+END
+fetch.xml
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/fetch.xml
+END
+get-m2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/get-m2.xml
+END
+KEYS
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/KEYS
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/README
+END

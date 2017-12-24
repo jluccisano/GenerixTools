@@ -1,0 +1,329 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/GenerixTools/!svn/ver/39/apache-ant-1.8.1/lib
+END
+ant-jdepend.pom
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/lib/ant-jdepend.pom
+END
+ant-junit.jar
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/lib/ant-junit.jar
+END
+svnant.jar
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/GenerixTools/!svn/ver/39/apache-ant-1.8.1/lib/svnant.jar
+END
+ant-jmf.pom
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/lib/ant-jmf.pom
+END
+ant-testutil.pom
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/lib/ant-testutil.pom
+END
+ant-netrexx.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/lib/ant-netrexx.jar
+END
+ant-apache-log4j.jar
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/lib/ant-apache-log4j.jar
+END
+ant-commons-net.jar
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/lib/ant-commons-net.jar
+END
+ant-commons-logging.jar
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/lib/ant-commons-logging.jar
+END
+ant-antlr.pom
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/lib/ant-antlr.pom
+END
+ant-launcher.jar
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/lib/ant-launcher.jar
+END
+ant.jar
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/lib/ant.jar
+END
+trilead.jar
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/lib/trilead.jar
+END
+ivy-2.2.0-rc1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/lib/ivy-2.2.0-rc1.jar
+END
+ant-junit.pom
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/lib/ant-junit.pom
+END
+ant-apache-regexp.jar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/lib/ant-apache-regexp.jar
+END
+ant-netrexx.pom
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/lib/ant-netrexx.pom
+END
+svnjavahl.jar
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/GenerixTools/!svn/ver/39/apache-ant-1.8.1/lib/svnjavahl.jar
+END
+ant-apache-log4j.pom
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/lib/ant-apache-log4j.pom
+END
+ant-commons-net.pom
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/lib/ant-commons-net.pom
+END
+ant-commons-logging.pom
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/lib/ant-commons-logging.pom
+END
+ant-apache-oro.jar
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/lib/ant-apache-oro.jar
+END
+ant-apache-resolver.jar
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/lib/ant-apache-resolver.jar
+END
+ant-launcher.pom
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/lib/ant-launcher.pom
+END
+ant.pom
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/lib/ant.pom
+END
+ant-javamail.jar
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/lib/ant-javamail.jar
+END
+ant-apache-bcel.jar
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/lib/ant-apache-bcel.jar
+END
+svnClientAdapter.jar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/GenerixTools/!svn/ver/39/apache-ant-1.8.1/lib/svnClientAdapter.jar
+END
+ant-jsch.jar
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/lib/ant-jsch.jar
+END
+ant-swing.jar
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/lib/ant-swing.jar
+END
+ant-apache-regexp.pom
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/lib/ant-apache-regexp.pom
+END
+ant-nodeps.jar
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/lib/ant-nodeps.jar
+END
+ant-apache-bsf.jar
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/lib/ant-apache-bsf.jar
+END
+ant-apache-oro.pom
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/lib/ant-apache-oro.pom
+END
+svnkit.jar
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/lib/svnkit.jar
+END
+ant-apache-resolver.pom
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/lib/ant-apache-resolver.pom
+END
+ivysvnresolver.jar
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/lib/ivysvnresolver.jar
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/lib/README
+END
+ant-javamail.pom
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/lib/ant-javamail.pom
+END
+ant-jai.jar
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/lib/ant-jai.jar
+END
+ant-apache-bcel.pom
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/lib/ant-apache-bcel.pom
+END
+ant-apache-xalan2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/lib/ant-apache-xalan2.jar
+END
+ant-jsch.pom
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/lib/ant-jsch.pom
+END
+ant-swing.pom
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/lib/ant-swing.pom
+END
+ant-nodeps.pom
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/lib/ant-nodeps.pom
+END
+ant-apache-bsf.pom
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/lib/ant-apache-bsf.pom
+END
+ant-parent.pom
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/lib/ant-parent.pom
+END
+ant-jdepend.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/lib/ant-jdepend.jar
+END
+ant-jmf.jar
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/lib/ant-jmf.jar
+END
+libraries.properties
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/lib/libraries.properties
+END
+ant-testutil.jar
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/lib/ant-testutil.jar
+END
+ant-antlr.jar
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/lib/ant-antlr.jar
+END
+ant-jai.pom
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/lib/ant-jai.pom
+END
+ant-apache-xalan2.pom
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/lib/ant-apache-xalan2.pom
+END

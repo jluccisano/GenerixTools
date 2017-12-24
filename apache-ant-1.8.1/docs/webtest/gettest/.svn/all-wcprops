@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/webtest/gettest
+END
+testother.txt
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/webtest/gettest/testother.txt
+END
+testperm.txt
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/webtest/gettest/testperm.txt
+END
+testtemp.txt
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/webtest/gettest/testtemp.txt
+END
+testlocal.txt
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/webtest/gettest/testlocal.txt
+END
+testredir5.txt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/webtest/gettest/testredir5.txt
+END
+.htaccess
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/webtest/gettest/.htaccess
+END
+local.cgi
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/webtest/gettest/local.cgi
+END

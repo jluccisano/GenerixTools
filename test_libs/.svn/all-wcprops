@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/GenerixTools/!svn/ver/128/test_libs
+END
+selenium-java-client-driver-tests.jar
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/GenerixTools/!svn/ver/99/test_libs/selenium-java-client-driver-tests.jar
+END
+selenium-java-client-driver.jar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/GenerixTools/!svn/ver/99/test_libs/selenium-java-client-driver.jar
+END
+selenium-server.jar
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/GenerixTools/!svn/ver/99/test_libs/selenium-server.jar
+END
+automation_dmv.swc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/GenerixTools/!svn/ver/128/test_libs/automation_dmv.swc
+END
+flexunit-aircilistener-4.1.0-RC1.77-sdk4.0.0.14159.swc
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/GenerixTools/!svn/ver/86/test_libs/flexunit-aircilistener-4.1.0-RC1.77-sdk4.0.0.14159.swc
+END
+flexunit-cilistener-4.1.0-RC1.77-sdk4.0.0.14159.swc
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/GenerixTools/!svn/ver/86/test_libs/flexunit-cilistener-4.1.0-RC1.77-sdk4.0.0.14159.swc
+END
+user-extensions.js
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/GenerixTools/!svn/ver/99/test_libs/user-extensions.js
+END
+flexunit-uilistener-4.1.0-RC1.77-sdk4.0.0.14159.swc
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/GenerixTools/!svn/ver/86/test_libs/flexunit-uilistener-4.1.0-RC1.77-sdk4.0.0.14159.swc
+END
+automation_agent.swc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/GenerixTools/!svn/ver/128/test_libs/automation_agent.swc
+END
+flexunit-core-flex-4.1.0-RC1.77-sdk4.0.0.14159.swc
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/GenerixTools/!svn/ver/86/test_libs/flexunit-core-flex-4.1.0-RC1.77-sdk4.0.0.14159.swc
+END
+automation.swc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/GenerixTools/!svn/ver/127/test_libs/automation.swc
+END
+automation_spark.swc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/GenerixTools/!svn/ver/128/test_libs/automation_spark.swc
+END
+automation_monkey.swc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/GenerixTools/!svn/ver/99/test_libs/automation_monkey.swc
+END
+selenium-server-coreless.jar
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/GenerixTools/!svn/ver/99/test_libs/selenium-server-coreless.jar
+END

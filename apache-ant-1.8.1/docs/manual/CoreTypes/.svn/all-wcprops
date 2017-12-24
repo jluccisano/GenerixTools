@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/CoreTypes
+END
+zipfileset.html
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/CoreTypes/zipfileset.html
+END
+description.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/CoreTypes/description.html
+END
+mapper.html
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/CoreTypes/mapper.html
+END
+filterchain.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/CoreTypes/filterchain.html
+END
+patternset.html
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/CoreTypes/patternset.html
+END
+regexp.html
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/CoreTypes/regexp.html
+END
+dirset.html
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/CoreTypes/dirset.html
+END
+custom-programming.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/CoreTypes/custom-programming.html
+END
+assertions.html
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/CoreTypes/assertions.html
+END
+fileset.html
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/CoreTypes/fileset.html
+END
+xmlcatalog.html
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/CoreTypes/xmlcatalog.html
+END
+namespace.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/CoreTypes/namespace.html
+END
+propertyset.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/CoreTypes/propertyset.html
+END
+filterset.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/CoreTypes/filterset.html
+END
+redirector.html
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/CoreTypes/redirector.html
+END
+tarfileset.html
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/CoreTypes/tarfileset.html
+END
+selectors.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/CoreTypes/selectors.html
+END
+selectors-program.html
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/CoreTypes/selectors-program.html
+END
+antlib.html
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/CoreTypes/antlib.html
+END
+resources.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/CoreTypes/resources.html
+END
+permissions.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/CoreTypes/permissions.html
+END
+filelist.html
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/CoreTypes/filelist.html
+END

@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/etc
+END
+maudit-frames.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/etc/maudit-frames.xsl
+END
+mmetrics-frames.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/etc/mmetrics-frames.xsl
+END
+junit-noframes.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/etc/junit-noframes.xsl
+END
+log.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/etc/log.xsl
+END
+ant-bootstrap.jar
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/etc/ant-bootstrap.jar
+END
+jdepend-frames.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/etc/jdepend-frames.xsl
+END
+junit-frames.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/etc/junit-frames.xsl
+END
+tagdiff.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/etc/tagdiff.xsl
+END
+coverage-frames.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/etc/coverage-frames.xsl
+END
+junit-frames-xalan1.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/etc/junit-frames-xalan1.xsl
+END
+changelog.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/etc/changelog.xsl
+END
+jdepend.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/etc/jdepend.xsl
+END

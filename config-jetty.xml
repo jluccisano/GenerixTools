@@ -1,0 +1,42 @@
+<Configure id="Server" class="org.mortbay.jetty.Server">
+	<Call name="addConnector">
+		<Arg>
+			<New class="org.mortbay.jetty.nio.SelectChannelConnector">
+				<Set name="host">
+					<SystemProperty name="jetty.host" default="0.0.0.0"/>
+				</Set>
+			
+				<Set name="port">
+					<SystemProperty name="jetty.port" default="8080"/>
+				</Set>
+			</New>
+		</Arg>
+	</Call>
+
+	<Call name="addHandler">
+		<Arg>
+			<New class="org.mortbay.jetty.webapp.WebAppContext">
+
+				<Set name="contextPath">
+					<SystemProperty name="jetty.webappcontext" default="/"/>
+				</Set>
+
+				<Set name="war">
+					<SystemProperty name="jetty.war" default="Gencore_portal"/>
+				</Set>
+
+				<Set name="overrideDescriptor">
+					<SystemProperty name="jetty.override-web" default=""/>
+				</Set>
+
+				<Set name="extraClasspath">
+					<SystemProperty name="jetty.extraclasspath" default=""/>
+				</Set>
+
+				<Set name="defaultsDescriptor">
+					<SystemProperty name="jetty.defaultsDescriptor"/>
+				</Set>
+			</New>
+		</Arg>
+	</Call>
+</Configure>

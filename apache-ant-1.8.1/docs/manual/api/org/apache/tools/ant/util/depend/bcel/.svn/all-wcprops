@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/util/depend/bcel
+END
+DependencyVisitor.html
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/util/depend/bcel/DependencyVisitor.html
+END
+package-frame.html
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/util/depend/bcel/package-frame.html
+END
+AncestorAnalyzer.html
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/util/depend/bcel/AncestorAnalyzer.html
+END
+package-summary.html
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/util/depend/bcel/package-summary.html
+END
+FullAnalyzer.html
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/util/depend/bcel/FullAnalyzer.html
+END
+package-tree.html
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/util/depend/bcel/package-tree.html
+END

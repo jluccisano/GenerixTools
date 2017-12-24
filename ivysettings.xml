@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+   Licensed to the Apache Software Foundation (ASF) under one
+   or more contributor license agreements.  See the NOTICE file
+   distributed with this work for additional information
+   regarding copyright ownership.  The ASF licenses this file
+   to you under the Apache License, Version 2.0 (the
+   "License"); you may not use this file except in compliance
+   with the License.  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing,
+   software distributed under the License is distributed on an
+   "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+   KIND, either express or implied.  See the License for the
+   specific language governing permissions and limitations
+   under the License.    
+-->
+<ivysettings>
+  <properties environment="env"/>
+  <properties file="/repository/ivy.properties"/>
+ 
+  <classpath file="${ant.home}/lib/svnkit.jar"/>
+  <classpath file="${ant.home}/lib/ivysvnresolver.jar"/>
+  <typedef name="svn" classname="fm.last.ivy.plugins.svnresolver.SvnResolver"/>
+  
+  <caches>
+	  <cache name="localcache" basedir="${env.GENTOOLS_HOME}/localcache" />
+  </caches> 
+
+  
+     
+  <resolvers>
+		
+		<chain name="anyivy-chain" returnFirst="true">
+			<svn name="ivysvn_jar" userName="${svn.user}" userPassword="${svn.password}"
+				 repositoryRoot="http://svn2.xp-dev.com/svn/GenRepo/"
+				 checkmodified="true" binaryDiff="false" checksums="">
+				<ivy pattern="jars/[organisation]/[module]/ivys/ivy-[revision].xml"/>
+				<artifact pattern="jars/[organisation]/[module]/[type]s/[artifact]-[revision].[ext]"/>		
+			</svn>
+			
+			<svn name="ivysvn_swc" userName="${svn.user}" userPassword="${svn.password}"
+				 repositoryRoot="http://svn2.xp-dev.com/svn/GenRepo/"
+				 checkmodified="true" binaryDiff="false" checksums="">
+				<ivy pattern="swcs/[organisation]/[module]/ivys/ivy-[revision].xml"/>
+				<artifact pattern="swcs/[organisation]/[module]/[type]s/[artifact]-[revision].[ext]"/>		
+			</svn>
+			
+		     <svn name="ivysvn_war" userName="${svn.user}" userPassword="${svn.password}"
+				 repositoryRoot="http://svn2.xp-dev.com/svn/GenRepo/"
+				 checkmodified="true" binaryDiff="false" checksums="">
+				<ivy pattern="wars/[organisation]/[module]/ivys/ivy-[revision].xml"/>
+				<artifact pattern="wars/[organisation]/[module]/[type]s/[artifact]-[revision].[ext]"/>		
+			</svn>
+        </chain>
+	    
+  </resolvers>
+
+  <settings defaultResolver="anyivy-chain" />
+  
+</ivysettings>

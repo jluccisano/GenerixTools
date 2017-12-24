@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="build_commons" xmlns:ac="antlib:net.sf.antcontrib">
+
+	<property environment="env"/>
+	
+	<import file="build_ivy.xml"/>
+
+	<property file="${env.GENTOOLS_HOME}/build.properties"/>
+		
+	<tstamp>
+		<format property="build.timestamp" pattern="yyyyMMDD-hhmmss" />
+	</tstamp>
+	
+	<!-- ================================= 
+          target: init the build folders     
+      ================================= -->
+	<target name="init_build" depends="checkos">
+	
+		<echo>initialize the output directory</echo>
+		
+		<delete dir="${build.dir}" />
+		
+		<mkdir dir="${build.dir}" />
+		
+		<echo>output directory has been created</echo>
+		
+		<mkdir dir="${bin.release.dir}" />
+		
+		<echo>bin-release directory has been created</echo>
+		
+		<mkdir dir="${bin.temp.dir}" />
+		
+		<echo>temp directory has been created</echo>
+		
+		<mkdir dir="${dist.dir}" />
+		
+		<echo>distribution directory has been created</echo>
+				
+		<mkdir dir="${package.dir}"/>
+		
+		<echo>package directory has been created</echo>
+		
+		<mkdir dir="${doc.dir}"/>
+		
+		<echo>doc directory has been created</echo>
+		
+		<mkdir dir="${test.dir}" />
+		
+		<echo>test directory has been created</echo>
+		  	
+	</target>
+
+	
+<!--##########################################################################################################################################-->	
+	
+	
+	
+	
+	<!--<target name="eclipse:install-project" description="Generate a .project for Eclipse">
+		<ac:if>
+				<ac:equals arg1="${project_name}" arg2="true" />
+				
+				 <ac:then>
+					<echo message="The project exist" />
+					<copy file="${gentools.home}/templates/${type}/.project" tofile=".project" overwrite="true">
+				- 		<filterset>
+							<filter token="NAME" value="${project.name}" /> 
+						</filterset>
+					</copy>
+				 </ac:then>
+				 
+				  <ac:else>
+					<echo message="Le path n'existe pas" />
+				  </ac:else>
+			</ac:if>	
+	</target>-->
+	
+	<target name="eclipse:install-project" description="Generate a .project for Eclipse">
+ 		<copy file="${gentools.home}/templates/${type}/.project" tofile=".project" overwrite="true">
+			<filterset>
+				<filter token="NAME" value="${svn.project.name}" /> 
+			</filterset>
+		</copy>
+	</target>
+	
+	
+	
+	<target name="package" depends="packageBinary,packageSource, packageDocs" />
+		
+		<target name="packageBinary">
+			<!--Create the binary distribution.-->
+			<zip
+				basedir="${build.dir}"
+				includes="dist/**"
+				destfile="${package.dir}/${ivy.module}_${version}-bin.zip" />
+		</target>
+		
+		<target name="packageSource">
+		
+			<zip
+				basedir="."			
+				includes="/**/*.*"
+				excludes="**/bin-debug/**/*.*,**/build/**/*.*,.project,.actionScriptProperties,.flexProperties,.settings"
+				destfile="${package.dir}/${ivy.module}_${version}-src.zip" />
+		</target>
+		
+		<target name="packageDocs">
+			<!--Create the documentation distribution.-->
+			<zip
+				basedir="${doc.dir}"
+				includes="**/*.*"
+				destfile="${package.dir}/${ivy.module}_${version}-doc.zip" />
+		</target>
+	
+	<target name="clean" description="--> clean temp directory">
+		<delete dir="${temp.dir}" />
+	</target>
+	
+	 <!-- ================================= 
+          target: checkos         
+      ================================= -->
+	<target name="checkos" description="--> Check the current OS">		
+		<echo>Check OS</echo>
+		<echo>OS is ${os.name}</echo>
+		
+		<condition property="isWindows">
+     		<os family="windows"/>
+		</condition>
+		
+		<condition property="isUnix">
+			  <os family="unix" />
+	    </condition>
+
+	</target>
+	
+	<target name="if_windows" depends="checkos" if="isWindows">
+		<property name="tomcat.home" value=""/>
+	</target>
+	
+	<target name="if_unix" depends="checkos" if="isUnix">
+		<property name="tomcat.home" value=""/>
+	</target>
+
+	<!--<typedef resource="org/tigris/subversion/svnant/svnantlib.xml"
+		     classpath="${ant.home}/lib/svnant.jar" /> 
+	
+	<target name="tag" description=" Tag a version">
+		<svn username="${svn.user}" password="${svn.password}" javahl="false" >
+			<copy srcUrl="http://svn2.xp-dev.com/svn/GenerixCore/trunk/Gencore_ui_login" 
+				  destUrl="http://svn2.xp-dev.com/svn/GenerixCore/tags/${ivy.module}/${ivy.module}_${project.version}"
+				  message="${ivy.module} ${project.version}"/>
+		</svn>
+	</target>
+	
+	<target name="checkout" description=" Checkout Tag a version">
+		<svn username="${svn.user}" password="${svn.password}">
+			<checkout url="http://svn2.xp-dev.com/svn/GenerixCore/tags/${ivy.module}/${ivy.module}_${project.version}" 
+				      destPath=""/>
+		</svn>
+	</target>-->
+	
+	<target name="deploy_war" description="--> Deploy a war into the server">
+		<scp file="${project.name}.war" todir="${username}@${domain}:/srv/webapps">
+		</scp>
+	</target>
+	
+	
+	
+	
+	
+	
+
+	
+</project>

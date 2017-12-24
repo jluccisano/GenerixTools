@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/GenerixTools/!svn/ver/118/tomcat/lib
+END
+annotations-api.jar
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/GenerixTools/!svn/ver/118/tomcat/lib/annotations-api.jar
+END
+el-api.jar
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/GenerixTools/!svn/ver/118/tomcat/lib/el-api.jar
+END
+tomcat-i18n-es.jar
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/GenerixTools/!svn/ver/118/tomcat/lib/tomcat-i18n-es.jar
+END
+tomcat-i18n-fr.jar
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/GenerixTools/!svn/ver/118/tomcat/lib/tomcat-i18n-fr.jar
+END
+catalina.jar
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/GenerixTools/!svn/ver/118/tomcat/lib/catalina.jar
+END
+jasper-el.jar
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/GenerixTools/!svn/ver/118/tomcat/lib/jasper-el.jar
+END
+jasper.jar
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/GenerixTools/!svn/ver/118/tomcat/lib/jasper.jar
+END
+tomcat-coyote.jar
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/GenerixTools/!svn/ver/118/tomcat/lib/tomcat-coyote.jar
+END
+servlet-api.jar
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/GenerixTools/!svn/ver/118/tomcat/lib/servlet-api.jar
+END
+catalina-ant.jar
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/GenerixTools/!svn/ver/118/tomcat/lib/catalina-ant.jar
+END
+tomcat-i18n-ja.jar
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/GenerixTools/!svn/ver/118/tomcat/lib/tomcat-i18n-ja.jar
+END
+tomcat-dbcp.jar
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/GenerixTools/!svn/ver/118/tomcat/lib/tomcat-dbcp.jar
+END
+catalina-tribes.jar
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/GenerixTools/!svn/ver/118/tomcat/lib/catalina-tribes.jar
+END
+catalina-ha.jar
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/GenerixTools/!svn/ver/118/tomcat/lib/catalina-ha.jar
+END
+jasper-jdt.jar
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/GenerixTools/!svn/ver/118/tomcat/lib/jasper-jdt.jar
+END
+jsp-api.jar
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/GenerixTools/!svn/ver/118/tomcat/lib/jsp-api.jar
+END

@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/GenerixTools/!svn/ver/133
+END
+install_prod.bat
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/GenerixTools/!svn/ver/132/install_prod.bat
+END
+config-jetty.xml
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/GenerixTools/!svn/ver/109/config-jetty.xml
+END
+build_db.xml
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/GenerixTools/!svn/ver/102/build_db.xml
+END
+build_ivy.xml
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/GenerixTools/!svn/ver/96/build_ivy.xml
+END
+install_dmz.bat
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/GenerixTools/!svn/ver/132/install_dmz.bat
+END
+build_tomcat.xml
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/GenerixTools/!svn/ver/117/build_tomcat.xml
+END
+ivysettings.xml
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/GenerixTools/!svn/ver/106/ivysettings.xml
+END
+jetty-6.1.25.zip
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/GenerixTools/!svn/ver/34/jetty-6.1.25.zip
+END
+build_flex_commons.xml
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/GenerixTools/!svn/ver/133/build_flex_commons.xml
+END
+build_commons.xml
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/GenerixTools/!svn/ver/117/build_commons.xml
+END
+build.properties
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/GenerixTools/!svn/ver/132/build.properties
+END
+build_java_commons.xml
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/GenerixTools/!svn/ver/132/build_java_commons.xml
+END
+deploy_bb_project.bat
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/GenerixTools/!svn/ver/109/deploy_bb_project.bat
+END
+install.bat
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/GenerixTools/!svn/ver/107/install.bat
+END

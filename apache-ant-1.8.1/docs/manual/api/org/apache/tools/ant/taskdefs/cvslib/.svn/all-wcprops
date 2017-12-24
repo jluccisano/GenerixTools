@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/cvslib
+END
+CVSEntry.html
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/cvslib/CVSEntry.html
+END
+CvsTagDiff.html
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/cvslib/CvsTagDiff.html
+END
+CvsVersion.html
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/cvslib/CvsVersion.html
+END
+package-frame.html
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/cvslib/package-frame.html
+END
+ChangeLogWriter.html
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/cvslib/ChangeLogWriter.html
+END
+package-summary.html
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/cvslib/package-summary.html
+END
+package-tree.html
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/cvslib/package-tree.html
+END
+CvsTagEntry.html
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/cvslib/CvsTagEntry.html
+END
+ChangeLogTask.html
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/cvslib/ChangeLogTask.html
+END
+CvsUser.html
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/cvslib/CvsUser.html
+END

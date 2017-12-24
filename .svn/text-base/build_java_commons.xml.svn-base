@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="build_java" default="main_java" >
+
+	<property environment="env"/>
+	
+	<path id="compile.classpath">
+		<path refid="ivy.compile.classpath"/>
+	</path>
+	
+
+
+	
+	<path id="test.classpath">
+		<path refid="ivy.test.classpath"/>	
+		<!-- Trouver les artifacts !!! Ajouter Embedded Jetty comme artifact-->
+		<fileset dir="${env.GENTOOLS_HOME}/test_libs" includes="**/*.jar"/>
+		<!-- Add the compile classpath -->
+		<pathelement path="${java.compile.temp.dir}"/>
+		<pathelement path="${java.test.compile.dir}"/>
+	</path>
+	
+	<path id="jetty.classpath">
+		<path refid="ivy.jetty.classpath"/>	
+		<!-- Trouver les artifacts !!! Ajouter Embedded Jetty comme artifact-->
+		<fileset dir="${env.GENTOOLS_HOME}/test_libs" includes="**/*.jar"/>
+		<!-- Add the compile classpath -->
+		<pathelement path="${java.compile.temp.dir}"/>
+		<pathelement path="${java.test.compile.dir}"/>
+	</path>
+	
+
+	
+	<target name="build_java_project" depends="init_compile_java,compile_java,init_javatest,compile_javatest,run_java_test,javadoc,junitreport,jar,publish"/>
+	
+	<target name="build_java_web_project" depends="init_compile_java,compile_java"/>
+	
+	<target name="build_executable_jar" depends="init_compile_java,compile_java,executable-jar,publish"/>
+	
+	<target name="build_java_project_withoutpublish" depends="compile_java,jar"/>
+	
+	<target name="web_project_test" depends="init_javatest,compile_javatest,run_test,stop-selenium-server"/>
+	
+	<!-- ================================= 
+          target: init compile java                  
+      ================================= -->
+	<target name="init_compile_java">
+	
+	    <mkdir dir="${java.doc.dir}"/>
+		<echo>create the javadoc directory</echo>
+		
+		<!-- Tous les fichiers qui seront compilés, iront dans ce dossier -->
+		<mkdir dir="${java.compile.temp.dir}"/>
+		<echo>create the javacompile temp directory</echo>
+				
+		<!-- Tous les fichiers qui n'ont pas besoin d'être compilé vont directs dans le dossier de compilation -->
+		<copy todir="${java.compile.temp.dir}" >
+		    <fileset dir="${src.main.resources.dir}"/>		
+		</copy> 
+		<echo>Les fichiers ont bien été copié dans ${java.compile.temp.dir}</echo>
+		
+		<!-- Tous les fichiers qui vont être compilé sont déposé dans le répertoire java temp -->
+		<copy todir="${java.temp.dir}" >
+		    <fileset dir="${src.main.java.dir}"/>
+		</copy> 
+				
+	</target>
+	
+	<!-- ================================= 
+          target: java_compile             
+      ================================= -->
+	<target name="compile_java" depends="init_compile_classpath" description="--> java compile">
+					
+		<echo>Compile the source files</echo>
+	
+		<javac srcdir="${java.temp.dir}" destdir="${java.compile.temp.dir}">
+			 <classpath>
+                <path refid="compile.classpath"/>
+            </classpath>
+		</javac>
+			
+	</target>
+	
+	
+	<!-- ================================= 
+          target: init java_test           
+      ================================= -->
+	<target name="init_javatest">
+		
+		<mkdir dir="${java.test.temp.dir}" />
+		<mkdir dir="${java.test.compile.dir}" />
+		<mkdir dir="${java.test.report.dir}" />
+		
+		<copy todir="${java.test.compile.dir}" >
+		    <fileset dir="${src.test.resources.dir}"/>
+		</copy> 
+		
+		<copy todir="${java.test.temp.dir}" >
+		    <fileset dir="${src.test.java.dir}"/>
+		</copy> 
+			
+	</target>
+	
+	<!-- ================================= 
+          target: compile java_test           
+      ================================= -->
+	<target name="compile_javatest" depends="init_test_classpath" description="--> java compile test">
+		<echo>Compile the source test files</echo>
+	
+		<javac srcdir="${java.test.temp.dir}" destdir="${java.test.compile.dir}">
+			 <classpath>
+                <path refid="test.classpath"/>
+            </classpath>
+		</javac>
+	</target>
+	
+	<!-- ================================= 
+          target: java_doc           
+      ================================= -->
+	<target name="javadoc">
+		 <javadoc packagenames="com.gencore.*"
+		          sourcepath="${java.temp.dir}"
+		          defaultexcludes="yes"
+		          destdir="${java.doc.dir}"
+		          author="true"
+		          version="true"
+		          use="true"
+		          failonerror="no"	 		 
+		          windowtitle="Gencore">
+	         		          
+		   	<classpath refid="compile.classpath"/>
+		   	<doctitle><![CDATA[<h1>Test</h1>]]></doctitle>
+		    <bottom><![CDATA[<i>Copyright &#169; 2000 Dummy Corp. All Rights Reserved.</i>]]></bottom>
+		    <tag name="todo" scope="all" description="To do:"/>
+		    <link offline="true" href="http://java.sun.com/j2se/1.5.0/docs/api/" packagelistLoc="C:\tmp"/>
+		    <link href="http://developer.java.sun.com/developer/products/xml/docs/api/"/>
+		 </javadoc>
+	</target>
+	
+	<!-- ================================= 
+          target: junit report           
+      ================================= -->
+	<target name="junitreport" description="-->">
+		<junitreport todir="${java.test.report.dir}">
+			<fileset dir="${java.test.report.dir}">
+				<include name="TEST-*.xml"/>
+			</fileset>
+			<report format="frames" todir="${java.test.html.report.dir}"/>
+		</junitreport>
+		
+		<fail if="test.failures" message="Problème lors des tests"/>
+	</target>
+	
+	
+	<!-- ================================= 
+          target: Package          
+     ================================= -->
+	<target name="jar">
+		 <echo>package the jar file</echo>    
+	     <jar destfile="${bin.release.dir}/${ivy.module}.jar" basedir="${java.compile.temp.dir}"/>
+	</target>
+	
+	<target name="executable-jar">	     
+	     <jar destfile="${bin.release.dir}/${ivy.module}.jar" basedir="${java.compile.temp.dir}">
+			 <manifest>
+                <attribute name="Main-Class" value="com.gencore.jetty.Start"/>
+            </manifest>
+		 </jar>
+	</target>
+	
+	<target name="war">
+		<echo>package the war file</echo>
+		<war destfile="${dist.dir}/${project.name}.war" webxml="${build.web.inf}/web.xml">
+			<fileset dir="${bin.release.dir}"/>
+		</war>	
+	</target>
+	
+    <target name="war_test">
+		<echo>package the war file</echo>
+		<war destfile="build/test/${project.name}_test.war" webxml="${build.web.inf}/web.xml">
+			<fileset dir="${bin.release.dir}"/>
+		</war>	
+	</target>
+	
+	
+	<!-- ================================= 
+          target: start selenium server        
+      ================================= -->
+	<target name="start-selenium-server">
+        <java jar="${env.GENTOOLS_HOME}/test_libs/selenium-server.jar" fork="true" spawn="true">
+            <arg line="-userExtensions ${env.GENTOOLS_HOME}/test_libs/user-extensions.js"/>
+			<arg line="-firefoxProfileTemplate /var/lib/hudson/.mozilla/firefox/"/>
+        </java>
+    </target>
+	
+    <!-- ================================= 
+          target: stop selenium server        
+      ================================= -->
+	<target name="stop-selenium-server">
+		<get taskname="selenium-shutdown" src="http://localhost:4444/selenium-server/driver/?cmd=shutDownSeleniumServer"
+			dest="result.txt" ignoreerrors="true" />
+		<echo taskname="selenium-shutdown" message="DGF Errors during shutdown are expected"/>
+	</target>
+	
+	
+	<target name="run_test" depends="init_jetty_classpath,start-selenium-server">
+	    <parallel>
+		
+	        <java classname="com.gencore.jetty.Start" fork="true">
+				<classpath>
+					<path refid="jetty.classpath"/>		   
+				</classpath>
+			</java>
+			
+	        <sequential>
+	            <waitfor>
+	                <socket server="localhost" port="8083"/>
+	            </waitfor>
+				
+				<junit printsummary="true" haltonfailure="false" fork="true" forkmode="once">
+				    <sysproperty key="log4j.configuration" value="file:///${basedir}/${java.test.temp.dir}/com/gencore/portal/test/resources/log4j.properties"/>
+					<assertions>
+						<enable/>
+					</assertions>
+					<classpath refid="test.classpath"/>
+					<formatter type="plain"/>
+					<formatter type="xml"/>
+					<batchtest todir="${java.test.report.dir}">
+						<fileset dir="${java.test.compile.dir}" includes="com/gencore/portal/test/ui/UITestSuite.class"/>
+					</batchtest>
+				</junit>
+				
+			    <java classname="com.gencore.jetty.Stop" fork="true">
+					<classpath>
+						<path refid="jetty.classpath"/>		   
+					</classpath>
+				</java>
+	        </sequential>
+	    </parallel>
+	</target>
+	
+	<target name="run_java_test">
+		<junit printsummary="true" haltonfailure="false" fork="true" forkmode="once">
+			<sysproperty key="log4j.configuration" value="file:///${basedir}/${java.test.compile.dir}/com/gencore/backend/test/resources/log4j.properties"/>
+			<assertions>
+				<enable/>
+			</assertions>
+			<classpath refid="test.classpath"/>
+			<formatter type="plain"/>
+			<formatter type="xml"/>
+			<batchtest todir="${java.test.report.dir}">
+				<fileset dir="${java.test.compile.dir}" includes="com/gencore/backend/test/BackendTestSuite.class"/>
+			</batchtest>
+		</junit>
+	</target>
+	
+   
+	
+	
+
+
+<!--##########################################################################################################################################-->
+	
+	
+	
+	
+<!--	<target name="build_executable_jar" depends="init_ivy,compile_java,executable-jar"/>-->
+	
+<!--	<target name="build_java_project2" depends="init_ivy,compile_java,jar,jetty-cycle,junitreport,package,publish,stop-selenium-server"/>-->
+	
+<!--	<path id="classpath">
+
+		<path location="${jar.dest.dir}/${ivy.module}.jar"/>
+
+		<path refid="ivy.compile.jar.classpath"/>
+
+	     <path location="${env.GENTOOLS_HOME}/test_libs/EmbeddedJetty.jar"/>
+	</path> -->
+	
+		<!-- ================================= 
+	<sysproperty key="log4j.configuration" value="file:///log4j.properties"/>
+          target: run java_test           
+      ================================= 
+	<target name="run_javatest">
+		<junit printsummary="true" haltonfailure="false" fork="true" forkmode="once">
+		    <assertions>
+		    	<enable/>
+		    </assertions>
+			<classpath refid="test.classpath"/>
+			<formatter type="plain"/>
+			<formatter type="xml"/>
+			<batchtest todir="${java.test.report.dir}">
+				<fileset dir="${java.test.dest.dir}" includes="com/gencore/test/BackendTestSuite.class"/>
+				<fileset dir="${java.test.dest.dir}" includes="com/gencore/test/ui/UITestSuite.class"/>
+			</batchtest>
+		</junit>
+	</target>-->
+	
+
+	
+<!--	<path id="compile.classpath">
+		<fileset dir="${server.lib}" includes="**/*.jar"/>
+		<path refid="ivy.compile.classpath"/>
+		<pathelement path="${build.web.inf}/classes"/>
+		<pathelement path="${java.test.dest.dir}"/>	
+	</path>-->
+	
+		<!--<path id="test.classpath">
+		<path refid="ivy.compile.jar.classpath"/>
+		<fileset dir="${env.GENTOOLS_HOME}/test_libs" includes="**/*.jar"/>
+		<pathelement path="${java.compile.temp.dir}"/>-->
+		<!--<pathelement path="${build.web.inf}/classes"/>-->
+		<!--<pathelement path="${java.test.dest.dir}"/>-->
+
+<!--		<fileset dir="${server.lib}" includes="**/*.jar"/>
+		<path refid="ivy.compile.classpath"/>-->
+<!--		<pathelement path="${build.web.inf}/classes"/>-->
+
+		
+<!--		<pathelement location="${build.web.inf}/classes"/>-->
+<!--    	<fileset dir="${build.web.inf}/classes">-->
+<!--       		 <include name="**/*.class"/>-->
+<!--    	</fileset>-->
+<!--		<pathelement path="${java.test.dest.dir}"/>-->
+
+  <!--  		<pathelement path="${build.web.inf}/classes"/>
+    		
+
+		    <pathelement path="${build.web.inf}/classes/com"/>-->
+    		
+    		
+			
+			<!--<fileset dir="${build.web.inf}/lib" includes="**/*.jar"/>-->
+			
+				
+
+	    
+	   <!--     <copy todir="${java.test.dest.dir}/com/gencore/test">
+			<fileset dir="${java.test.temp.dir}/com/gencore/test">
+				<include name="**/resources/*"/>
+			</fileset>
+		</copy>
+		
+	 <copy todir="${build.web.inf}/classes/com">
+			<fileset dir="${java.temp.dir}/com">
+				<include name="resource/*"/>
+			</fileset>
+		</copy> -->
+
+	<!--</path>-->
+	
+	<target name="start-embedded-jetty" depends="init_jetty_classpath" description="--> Start Embedded Jetty">
+		<!--<java jar="${jar.dest.dir}/${ivy.module}.jar" fork="true" classpathref="classpath"/>-->
+		
+		<java classname="com.gencore.jetty.Start" fork="true">
+			<classpath>
+				<path refid="jetty.classpath"/>
+			</classpath>
+		</java>
+	</target>
+	
+     <target name="start-standalone-jetty-server">
+	   
+        <java classname="com.gencore.jetty.Start" fork="true">
+            <classpath>
+			    <path refid="test.classpath"/>		   
+			</classpath>
+        </java>
+    </target>
+	
+	<target name="jetty-check-status">
+		<condition property="jetty.started">
+			<socket server="localhost" port="8080"/>
+		</condition>
+	</target>
+
+
+	<target name="jetty-stop" depends="jetty-check-status" if="jetty.started">
+		<java classname="com.gencore.jetty.Stop"  fork="true" >
+			 <classpath>
+			    <path refid="classpath"/>		   
+			</classpath>
+		</java>
+		<sleep seconds="2"/>
+    </target>
+	
+	<target name="jaxb:xjc" depends="init_compile_classpath">
+	    <taskdef name="xjc" classname="com.sun.tools.xjc.XJCTask">
+			 <classpath>
+					<path refid="compile.classpath"/>
+			 </classpath>
+		</taskdef>		
+		<delete dir="${dest.dir}" />
+		<mkdir dir="${dest.dir}" />
+		<xjc destdir="${root.dest.dir}" package="${package}">	    
+			<schema  dir="${schema.dir}" includes="*.xsd"/>
+		</xjc>
+	</target>
+	
+
+		
+
+	
+	
+
+
+
+
+	
+	
+	
+	
+</project>

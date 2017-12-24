@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/GenerixTools/!svn/ver/131/repository
+END
+ivy.properties
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/GenerixTools/!svn/ver/60/repository/ivy.properties
+END
+ivysettings.xml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/GenerixTools/!svn/ver/20/repository/ivysettings.xml
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/GenerixTools/!svn/ver/131/repository/build.xml
+END

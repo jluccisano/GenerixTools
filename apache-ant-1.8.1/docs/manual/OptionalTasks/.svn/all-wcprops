@@ -1,0 +1,341 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks
+END
+jarlib-resolve.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/jarlib-resolve.html
+END
+antlr.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/antlr.html
+END
+native2ascii.html
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/native2ascii.html
+END
+jarlib-available.html
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/jarlib-available.html
+END
+serverdeploy.html
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/serverdeploy.html
+END
+propertyfile.html
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/propertyfile.html
+END
+junitreport.html
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/junitreport.html
+END
+attrib.html
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/attrib.html
+END
+cab.html
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/cab.html
+END
+symlink.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/symlink.html
+END
+javacc.html
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/javacc.html
+END
+javah.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/javah.html
+END
+ftp.html
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/ftp.html
+END
+BorlandGenerateClient.html
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/BorlandGenerateClient.html
+END
+translate.html
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/translate.html
+END
+pvcstask.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/pvcstask.html
+END
+ejb.html
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/ejb.html
+END
+sshsession.html
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/sshsession.html
+END
+wljspc.html
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/wljspc.html
+END
+chgrp.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/chgrp.html
+END
+script.html
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/script.html
+END
+sos.html
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/sos.html
+END
+perforce.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/perforce.html
+END
+jlink.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/jlink.html
+END
+jarlib-manifest.html
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/jarlib-manifest.html
+END
+jdepend.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/jdepend.html
+END
+schemavalidate.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/schemavalidate.html
+END
+xmlvalidate.html
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/xmlvalidate.html
+END
+chown.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/chown.html
+END
+starteam.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/starteam.html
+END
+clearcase.html
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/clearcase.html
+END
+image.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/image.html
+END
+jjtree.html
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/jjtree.html
+END
+scriptdef.html
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/scriptdef.html
+END
+scp.html
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/scp.html
+END
+replaceregexp.html
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/replaceregexp.html
+END
+renameextensions.html
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/renameextensions.html
+END
+sound.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/sound.html
+END
+junit.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/junit.html
+END
+jjdoc.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/jjdoc.html
+END
+mimemail.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/mimemail.html
+END
+splash.html
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/splash.html
+END
+echoproperties.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/echoproperties.html
+END
+telnet.html
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/telnet.html
+END
+setproxy.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/setproxy.html
+END
+rpm.html
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/rpm.html
+END
+jspc.html
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/jspc.html
+END
+depend.html
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/depend.html
+END
+netrexxc.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/netrexxc.html
+END
+ccm.html
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/ccm.html
+END
+sshexec.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/sshexec.html
+END
+jarlib-display.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/jarlib-display.html
+END
+rexec.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/rexec.html
+END
+BorlandEJBTasks.html
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/BorlandEJBTasks.html
+END
+image-classdiagram.gif
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/image-classdiagram.gif
+END
+vss.html
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/OptionalTasks/vss.html
+END

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/depend
+END
+DirectoryIterator.html
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/depend/DirectoryIterator.html
+END
+ClassFileIterator.html
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/depend/ClassFileIterator.html
+END
+Depend.html
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/depend/Depend.html
+END
+package-frame.html
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/depend/package-frame.html
+END
+ClassFile.html
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/depend/ClassFile.html
+END
+ClassFileUtils.html
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/depend/ClassFileUtils.html
+END
+JarFileIterator.html
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/depend/JarFileIterator.html
+END
+package-summary.html
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/depend/package-summary.html
+END
+AntAnalyzer.html
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/depend/AntAnalyzer.html
+END
+package-tree.html
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/GenerixTools/!svn/ver/3/apache-ant-1.8.1/docs/manual/api/org/apache/tools/ant/taskdefs/optional/depend/package-tree.html
+END

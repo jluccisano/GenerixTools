@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/GenerixTools/!svn/ver/118/tomcat/lib/activemq4.1.1
+END
+activemq-console-4.1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/GenerixTools/!svn/ver/118/tomcat/lib/activemq4.1.1/activemq-console-4.1.1.jar
+END
+activeio-core-3.0.0-incubator.jar
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/GenerixTools/!svn/ver/118/tomcat/lib/activemq4.1.1/activeio-core-3.0.0-incubator.jar
+END
+mx4j-2.1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/GenerixTools/!svn/ver/118/tomcat/lib/activemq4.1.1/mx4j-2.1.1.jar
+END
+derby-10.1.1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/GenerixTools/!svn/ver/118/tomcat/lib/activemq4.1.1/derby-10.1.1.0.jar
+END
+commons-dbcp-1.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/GenerixTools/!svn/ver/118/tomcat/lib/activemq4.1.1/commons-dbcp-1.2.jar
+END
+commons-pool-1.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/GenerixTools/!svn/ver/118/tomcat/lib/activemq4.1.1/commons-pool-1.2.jar
+END
+activemq-web-4.1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/GenerixTools/!svn/ver/118/tomcat/lib/activemq4.1.1/activemq-web-4.1.1.jar
+END
+activemq-jaas-4.1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/GenerixTools/!svn/ver/118/tomcat/lib/activemq4.1.1/activemq-jaas-4.1.1.jar
+END
+geronimo-jms_1.1_spec-1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/GenerixTools/!svn/ver/118/tomcat/lib/activemq4.1.1/geronimo-jms_1.1_spec-1.0.jar
+END
+commons-logging-1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/GenerixTools/!svn/ver/118/tomcat/lib/activemq4.1.1/commons-logging-1.1.jar
+END
+backport-util-concurrent-2.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/GenerixTools/!svn/ver/118/tomcat/lib/activemq4.1.1/backport-util-concurrent-2.1.jar
+END
+activemq-core-4.1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/GenerixTools/!svn/ver/118/tomcat/lib/activemq4.1.1/activemq-core-4.1.1.jar
+END
+activemq-core-4.1.1-tests.jar
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/GenerixTools/!svn/ver/118/tomcat/lib/activemq4.1.1/activemq-core-4.1.1-tests.jar
+END
+spring-2.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/GenerixTools/!svn/ver/118/tomcat/lib/activemq4.1.1/spring-2.0.jar
+END
+geronimo-j2ee-management_1.0_spec-1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/GenerixTools/!svn/ver/118/tomcat/lib/activemq4.1.1/geronimo-j2ee-management_1.0_spec-1.0.jar
+END
+commons-beanutils-1.6.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/GenerixTools/!svn/ver/118/tomcat/lib/activemq4.1.1/commons-beanutils-1.6.1.jar
+END
+xbean-spring-2.8.jar
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/GenerixTools/!svn/ver/118/tomcat/lib/activemq4.1.1/xbean-spring-2.8.jar
+END
